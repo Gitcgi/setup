@@ -3,7 +3,7 @@
 export BUILD_BASE='/home/oneops/build'
 export OO_HOME='/home/oneops'
 export SEARCH_SITE=localhost
-export GITHUB_URL='https://github.com/Gitcgi'
+export GITHUB_URL='https://github.com/oneops'
 echo "$BUILD_BASE"
 
 git config --global user.email "you@example.com"
@@ -17,7 +17,8 @@ if [ -d "$BUILD_BASE/build-wf" ]; then
   git pull
 else
   echo "doing git clone"
-  git clone "$GITHUB_URL/build-wf.git"
+  #git clone "$GITHUB_URL/build-wf.git"
+  git clone "https://github.com/Gitcgi/build-wf.git"
 fi
 sleep 2
 
